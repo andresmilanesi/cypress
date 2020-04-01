@@ -1,0 +1,5 @@
+{
+    "baseUrl":"https://manageint1.altitude-arena.com",
+    "video":true,
+    "screenShotFolder":"cypress/videos"
+}
