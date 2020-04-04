@@ -1,5 +1,9 @@
 {
     "baseUrl":"https://manageint1.altitude-arena.com",
-    "video":true,
-    "screenShotFolder":"cypress/videos"
+    "video":false,
+    "screenShotFolder":"cypress/videos",
+    "reporter": "cypress-multi-reporters",
+    "reporterOptions": {
+        "configFile": "reporterOptions.json"
+    }
 }

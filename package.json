@@ -1,5 +1,16 @@
 {
     "devDependencies": {
-        "cypress": "^4.2.0"
+        "cypress": "^4.2.0",
+        "cypress-multi-reporters": "^1.2.4",
+        "mocha": "^7.1.1",
+        "mochawesome": "^5.0.0",
+        "mochawesome-merge": "^4.0.3",
+        "mochawesome-report-generator": "^4.1.0"
+    },
+    "scripts": {
+        "deleteOldReports": "sudo rm -fr cypress/reports/mocha/*.json",
+        "mergeReports": "sudo npx mochawesome-merge cypress/reports/mocha/mochawesome*.json > mochaReports/report.json",
+        "generateReport": "sudo npx marge mochaReports/*.json -f report -o mochaReports",
+        "runRegression": "npm run deleteOldReports; npx cypress run; npm run mergeReports; npm run generateReport"
     }
 }
