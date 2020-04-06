@@ -1,4 +1,13 @@
 {
-    "userLogin": "LOCATOR",
-    "passLogin": "LOCATOR"
+    "pageLoginuserField": "#login-email",
+    "pageLoginpassField": "#login-pass",
+    "pageLoginloginButton": ".btn",
+    "pageSideBarAdvertiserButton": ".j-advertiser-section",
+    "pageSideBarCreateAdvertiser": ".sidebar-tools > .j-advertiser-add",
+    "pageAdvertiserNameField": "#form-field-name",
+    "pageAdvertiserContactNameField": "#form-field-contactName",
+    "pageAdvertiserContactEmailField": "#form-field-contactEmail",
+    "pageAdvertiserContactPhoneField": "#form-field-contactPhone",
+    "pageAdvertiserContactAddressField": "#form-field-contactAddress",
+    "pageAdvertiserCreateAndContinueButton": "#advertiser-create-and-navigate-btn"
 }

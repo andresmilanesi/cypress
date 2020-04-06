@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-04-06T19:25:30.729Z",
+    "end": "2020-04-06T19:25:49.718Z",
+    "duration": 18989,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "3ab43400-ac3c-4261-bc77-6f4eece7074f",
+      "title": "",
+      "fullFile": "cypress/integration/Column6/dashboardRegression.spec.js",
+      "file": "cypress/integration/Column6/dashboardRegression.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7cdbe694-6cf7-492e-94a8-a78abe888603",
+          "title": "Dashboard regression testing",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "demandFlow",
+              "fullTitle": "Dashboard regression testing demandFlow",
+              "timedOut": null,
+              "duration": 18950,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.login();\ncy.createAdvertiser();\ncy.createIO();\ncy.createCampaign();\ncy.createTagMedia();",
+              "err": {},
+              "uuid": "7b4931e2-e47d-408f-8589-cb79d428b8c2",
+              "parentUUID": "7cdbe694-6cf7-492e-94a8-a78abe888603",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "7b4931e2-e47d-408f-8589-cb79d428b8c2"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 18950,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.1.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "5.0.0"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "4.1.0"
+    }
+  }
+}
