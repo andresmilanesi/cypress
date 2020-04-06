@@ -1,14 +1,14 @@
 {
   "stats": {
     "suites": 1,
-    "tests": 1,
-    "passes": 1,
+    "tests": 2,
+    "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2020-04-04T03:44:56.873Z",
-    "end": "2020-04-04T03:44:58.257Z",
-    "duration": 1384,
-    "testsRegistered": 1,
+    "start": "2020-04-06T15:10:53.547Z",
+    "end": "2020-04-06T15:10:54.914Z",
+    "duration": 1367,
+    "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
@@ -18,16 +18,35 @@
   },
   "results": [
     {
-      "uuid": "31d233f7-b448-4b2e-91ff-f75b1f205859",
+      "uuid": "27afc780-08f9-4708-a001-cc7a648b2fd8",
       "title": "",
       "fullFile": "cypress/integration/Column6/newDashboard.spec.js",
       "file": "cypress/integration/Column6/newDashboard.spec.js",
       "beforeHooks": [],
       "afterHooks": [],
-      "tests": [],
+      "tests": [
+        {
+          "title": "Commands",
+          "fullTitle": " Commands",
+          "timedOut": null,
+          "duration": 42,
+          "state": "passed",
+          "speed": "medium",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "cy.fixture(\"column6\").as(\"data\");\ncy.get(\"@data\").then(function (data) {\n  Cypress.Commands.add('login', function () {\n    cy.visit(\"/login\");\n    cy.get('#login-email').type(data.userEmail);\n    cy.get('#login-pass').type(data.userPass, {\n      log: false\n    });\n    cy.get('.btn').debug().click();\n  });\n  Cypress.Commands.add('createAdvertiser', function () {\n    cy.get(\".j-advertiser-section\").click();\n    cy.get(\".sidebar-tools > .j-advertiser-add\").click();\n    cy.get(\"#form-field-name\").type(data.releaseVersion);\n    cy.get(\"#form-field-contactName\").type(data.randomName);\n    cy.get(\"#form-field-contactEmail\").type(data.email);\n    cy.get(\"#form-field-contactPhone\").type(data.phone);\n    cy.get(\"#form-field-contactAddress\").type(data.address);\n    cy.get(\"#advertiser-create-and-navigate-btn\").click();\n  });\n  Cypress.Commands.add('createIO', function () {\n    cy.get(\".close\").click();\n    cy.get(\"#form-field-name\").type(data.releaseVersion);\n    cy.get(\"#form-field-primaryContactName\").type(data.randomName);\n    cy.get(\"#form-field-primaryContactEmail\").type(data.email);\n    cy.get(\"#insertionOrder-create-and-navigate-btn\").click();\n  });\n  Cypress.Commands.add('createCampaign', function () {\n    cy.get(\".close\").click();\n    cy.get(\"#form-field-name\").type(data.releaseVersion);\n    cy.get(\"#form-field-cpm\").clear();\n    cy.get(\"#form-field-cpm\").type(data.campaignCPM);\n    cy.get(\"#j-field-container-goal > .ng-isolate-scope > .form-group > :nth-child(4) > .ng-binding\").click();\n    cy.get(\"#campaign-create-and-navigate-btn\").click();\n  });\n  Cypress.Commands.add('createTagMedia', function () {\n    cy.get(\".close\").click();\n    cy.get(\"#form-field-name\").type(data.releaseVersion);\n    cy.get(\".form-group-adTag > .CodeMirror > .CodeMirror-scroll\").type(data.mediaTag);\n    cy.get(\"#media-save-btn\").click();\n  });\n});",
+          "err": {},
+          "uuid": "4f82d041-5a00-4eb7-8063-1983045b009e",
+          "parentUUID": "27afc780-08f9-4708-a001-cc7a648b2fd8",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
       "suites": [
         {
-          "uuid": "c3980b33-9daf-41e3-8692-ac12a279114c",
+          "uuid": "a910e7fb-82fe-4742-b5ac-6b644d73007f",
           "title": "New Dashboard testing",
           "fullFile": "",
           "file": "",
@@ -38,7 +57,7 @@
               "title": "DemandFlow",
               "fullTitle": "New Dashboard testing DemandFlow",
               "timedOut": null,
-              "duration": 579,
+              "duration": 522,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,32 +66,34 @@
               "context": null,
               "code": "cy.visit(\"http://localhost:3000\");",
               "err": {},
-              "uuid": "78c4371f-8f9f-49af-8887-93e4929142b3",
-              "parentUUID": "c3980b33-9daf-41e3-8692-ac12a279114c",
+              "uuid": "de58ebf6-d92b-4a7c-aaef-e4e452032a36",
+              "parentUUID": "a910e7fb-82fe-4742-b5ac-6b644d73007f",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "78c4371f-8f9f-49af-8887-93e4929142b3"
+            "de58ebf6-d92b-4a7c-aaef-e4e452032a36"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 579,
+          "duration": 522,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
         }
       ],
-      "passes": [],
+      "passes": [
+        "4f82d041-5a00-4eb7-8063-1983045b009e"
+      ],
       "failures": [],
       "pending": [],
       "skipped": [],
-      "duration": 0,
+      "duration": 42,
       "root": true,
-      "rootEmpty": true,
+      "rootEmpty": false,
       "_timeout": 2000
     }
   ],

@@ -11,6 +11,7 @@
         "deleteOldReports": "sudo rm -fr cypress/reports/mocha/*.json",
         "mergeReports": "sudo npx mochawesome-merge cypress/reports/mocha/mochawesome*.json > mochaReports/report.json",
         "generateReport": "sudo npx marge mochaReports/*.json -f report -o mochaReports",
-        "runRegression": "npm run deleteOldReports; npx cypress run; npm run mergeReports; npm run generateReport"
+        "fullRegression": "npm run deleteOldReports; npx cypress run; npm run mergeReports; npm run generateReport",
+        "smallRegression": "npm run deleteOldReports; npx cypress run --spec 'cypress/integration/Column6/*'; npm run mergeReports; npm run generateReport"
     }
 }
