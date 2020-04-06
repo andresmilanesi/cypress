@@ -2,7 +2,7 @@
 
 describe("Dashboard regression testing", () => {
 
-    it("DemandFlow", () => {
+    it("demandFlow", () => {
 
         cy.login();
         cy.createAdvertiser();

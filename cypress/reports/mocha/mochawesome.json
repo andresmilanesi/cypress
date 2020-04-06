@@ -1,14 +1,14 @@
 {
   "stats": {
     "suites": 1,
-    "tests": 2,
-    "passes": 2,
+    "tests": 1,
+    "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2020-04-06T15:10:33.485Z",
-    "end": "2020-04-06T15:10:52.567Z",
-    "duration": 19082,
-    "testsRegistered": 2,
+    "start": "2020-04-06T18:52:22.380Z",
+    "end": "2020-04-06T18:52:31.067Z",
+    "duration": 8687,
+    "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
@@ -18,35 +18,16 @@
   },
   "results": [
     {
-      "uuid": "057efad6-4b48-491a-88b3-4f54bd5eed7b",
+      "uuid": "7fdbcfa4-c721-475e-acda-599dd452eca8",
       "title": "",
-      "fullFile": "cypress/integration/Column6/dashboardRegression.spec.js",
-      "file": "cypress/integration/Column6/dashboardRegression.spec.js",
+      "fullFile": "cypress/integration/Column6/dashBoard.spec.js",
+      "file": "cypress/integration/Column6/dashBoard.spec.js",
       "beforeHooks": [],
       "afterHooks": [],
-      "tests": [
-        {
-          "title": "Commands",
-          "fullTitle": " Commands",
-          "timedOut": null,
-          "duration": 35,
-          "state": "passed",
-          "speed": "fast",
-          "pass": true,
-          "fail": false,
-          "pending": false,
-          "context": null,
-          "code": "cy.fixture(\"column6\").as(\"data\");\ncy.get(\"@data\").then(function (data) {\n  Cypress.Commands.add('login', function () {\n    cy.visit(\"/login\");\n    cy.get('#login-email').type(data.userEmail);\n    cy.get('#login-pass').type(data.userPass, {\n      log: false\n    });\n    cy.get('.btn').debug().click();\n  });\n  Cypress.Commands.add('createAdvertiser', function () {\n    cy.get(\".j-advertiser-section\").click();\n    cy.get(\".sidebar-tools > .j-advertiser-add\").click();\n    cy.get(\"#form-field-name\").type(data.releaseVersion);\n    cy.get(\"#form-field-contactName\").type(data.randomName);\n    cy.get(\"#form-field-contactEmail\").type(data.email);\n    cy.get(\"#form-field-contactPhone\").type(data.phone);\n    cy.get(\"#form-field-contactAddress\").type(data.address);\n    cy.get(\"#advertiser-create-and-navigate-btn\").click();\n  });\n  Cypress.Commands.add('createIO', function () {\n    cy.get(\".close\").click();\n    cy.get(\"#form-field-name\").type(data.releaseVersion);\n    cy.get(\"#form-field-primaryContactName\").type(data.randomName);\n    cy.get(\"#form-field-primaryContactEmail\").type(data.email);\n    cy.get(\"#insertionOrder-create-and-navigate-btn\").click();\n  });\n  Cypress.Commands.add('createCampaign', function () {\n    cy.get(\".close\").click();\n    cy.get(\"#form-field-name\").type(data.releaseVersion);\n    cy.get(\"#form-field-cpm\").clear();\n    cy.get(\"#form-field-cpm\").type(data.campaignCPM);\n    cy.get(\"#j-field-container-goal > .ng-isolate-scope > .form-group > :nth-child(4) > .ng-binding\").click();\n    cy.get(\"#campaign-create-and-navigate-btn\").click();\n  });\n  Cypress.Commands.add('createTagMedia', function () {\n    cy.get(\".close\").click();\n    cy.get(\"#form-field-name\").type(data.releaseVersion);\n    cy.get(\".form-group-adTag > .CodeMirror > .CodeMirror-scroll\").type(data.mediaTag);\n    cy.get(\"#media-save-btn\").click();\n  });\n});",
-          "err": {},
-          "uuid": "570fb16c-fc4f-41a1-9270-7a37f4083681",
-          "parentUUID": "057efad6-4b48-491a-88b3-4f54bd5eed7b",
-          "isHook": false,
-          "skipped": false
-        }
-      ],
+      "tests": [],
       "suites": [
         {
-          "uuid": "957cdb5c-cf07-4cc3-b274-dc7bee3d4567",
+          "uuid": "b85c1eef-f27e-4af1-b59e-bbc318e49a4e",
           "title": "Dashboard regression testing",
           "fullFile": "",
           "file": "",
@@ -54,46 +35,44 @@
           "afterHooks": [],
           "tests": [
             {
-              "title": "DemandFlow",
-              "fullTitle": "Dashboard regression testing DemandFlow",
+              "title": "testLogin",
+              "fullTitle": "Dashboard regression testing testLogin",
               "timedOut": null,
-              "duration": 19000,
+              "duration": 8598,
               "state": "passed",
               "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "cy.login();\ncy.createAdvertiser();\ncy.createIO();\ncy.createCampaign();\ncy.createTagMedia();",
+              "code": "cy.login();",
               "err": {},
-              "uuid": "071b76fd-c089-4cd8-a706-a1fabdf64484",
-              "parentUUID": "957cdb5c-cf07-4cc3-b274-dc7bee3d4567",
+              "uuid": "1438815a-6075-4ebe-8733-c44601e80014",
+              "parentUUID": "b85c1eef-f27e-4af1-b59e-bbc318e49a4e",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "071b76fd-c089-4cd8-a706-a1fabdf64484"
+            "1438815a-6075-4ebe-8733-c44601e80014"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 19000,
+          "duration": 8598,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
         }
       ],
-      "passes": [
-        "570fb16c-fc4f-41a1-9270-7a37f4083681"
-      ],
+      "passes": [],
       "failures": [],
       "pending": [],
       "skipped": [],
-      "duration": 35,
+      "duration": 0,
       "root": true,
-      "rootEmpty": false,
+      "rootEmpty": true,
       "_timeout": 2000
     }
   ],
