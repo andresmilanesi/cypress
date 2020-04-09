@@ -1,13 +1,28 @@
 {
-    "pageLoginuserField": "#login-email",
-    "pageLoginpassField": "#login-pass",
-    "pageLoginloginButton": ".btn",
-    "pageSideBarAdvertiserButton": ".j-advertiser-section",
-    "pageSideBarCreateAdvertiser": ".sidebar-tools > .j-advertiser-add",
-    "pageAdvertiserNameField": "#form-field-name",
-    "pageAdvertiserContactNameField": "#form-field-contactName",
-    "pageAdvertiserContactEmailField": "#form-field-contactEmail",
-    "pageAdvertiserContactPhoneField": "#form-field-contactPhone",
-    "pageAdvertiserContactAddressField": "#form-field-contactAddress",
-    "pageAdvertiserCreateAndContinueButton": "#advertiser-create-and-navigate-btn"
+    "pageLogin": {
+        "userField": "#login-email",
+        "passField": "#login-pass",
+        "loginButton": ".btn"
+    },
+    "pageSideBar": {
+        "advertiserButton": ".j-advertiser-section",
+        "createAdvertiser": ".sidebar-tools > .j-advertiser-add"
+    },
+    "pageAdvertiser": {
+        "nameField": "#form-field-name",
+        "contactNameField": "#form-field-contactName",
+        "contactEmailField": "#form-field-contactEmail",
+        "contactPhoneField": "#form-field-contactPhone",
+        "contactAddressField": "#form-field-contactAddress",
+        "createAndContinueButton": "#advertiser-create-and-navigate-btn"
+    },
+    "pageIO": {
+        "nameField": "#form-field-name",
+        "contactNameField": "#form-field-primaryContactName",
+        "contactEmailField": "#form-field-primaryContactEmail",
+        "createAndContinueButton": "#insertionOrder-create-and-navigate-btn"
+    },
+    "globalPopUps": {
+        "creationSuccess": ".close"
+    }
 }

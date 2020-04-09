@@ -8,28 +8,28 @@ before(() => {
 
             Cypress.Commands.add('login', () => {
                 cy.visit("/login");
-                cy.get(locator.pageLoginuserField).type(data.userEmail);
-                cy.get(locator.pageLoginpassField).type(data.userPass, {log: false});
-                cy.get(locator.pageLoginloginButton).debug().click();
+                cy.get(locator.pageLogin.userField).type(data.userEmail);
+                cy.get(locator.pageLogin.passField).type(data.userPass, {log: false});
+                cy.get(locator.pageLogin.loginButton).click();
             })
 
             Cypress.Commands.add('createAdvertiser', () => {
-                cy.get(locator.pageSideBarAdvertiserButton).click();
-                cy.get(locator.pageSideBarCreateAdvertiser).click();
-                cy.get(locator.pageAdvertiserNameField).type(data.releaseVersion);
-                cy.get(locator.pageAdvertiserContactNameField).type(data.randomName);
-                cy.get(locator.pageAdvertiserContactEmailField).type(data.email);
-                cy.get(locator.pageAdvertiserContactPhoneField).type(data.phone);
-                cy.get(locator.pageAdvertiserContactAddressField).type(data.address);
-                cy.get(locator.pageAdvertiserCreateAndContinueButton).click();
+                cy.get(locator.pageSideBar.advertiserButton).click();
+                cy.get(locator.pageSideBar.createAdvertiser).click();
+                cy.get(locator.pageAdvertiser.nameField).type(data.releaseVersion);
+                cy.get(locator.pageAdvertiser.contactNameField).type(data.randomName);
+                cy.get(locator.pageAdvertiser.contactEmailField).type(data.email);
+                cy.get(locator.pageAdvertiser.contactPhoneField).type(data.phone);
+                cy.get(locator.pageAdvertiser.contactAddressField).type(data.address);
+                cy.get(locator.pageAdvertiser.createAndContinueButton).click();
             })
 
             Cypress.Commands.add('createIO', () => {
-                cy.get(".close").click();
-                cy.get("#form-field-name").type(data.releaseVersion);
-                cy.get("#form-field-primaryContactName").type(data.randomName);
-                cy.get("#form-field-primaryContactEmail").type(data.email);
-                cy.get("#insertionOrder-create-and-navigate-btn").click();
+                cy.get(locator.globalPopUps.creationSuccess).click();
+                cy.get(locator.pageIO.nameField).type(data.releaseVersion);
+                cy.get(locator.pageIO.contactNameField).type(data.randomName);
+                cy.get(locator.pageIO.contactEmailField).type(data.email);
+                cy.get(locator.pageIO.createAndContinueButton).click();
             })
 
             Cypress.Commands.add('createCampaign', () => {
