@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2020-04-06T18:52:22.380Z",
-    "end": "2020-04-06T18:52:31.067Z",
-    "duration": 8687,
+    "start": "2020-04-10T18:00:00.173Z",
+    "end": "2020-04-10T18:00:17.257Z",
+    "duration": 17084,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,16 +18,16 @@
   },
   "results": [
     {
-      "uuid": "7fdbcfa4-c721-475e-acda-599dd452eca8",
+      "uuid": "54c00896-0407-456a-be90-3eb17b2fd25e",
       "title": "",
-      "fullFile": "cypress/integration/Column6/dashBoard.spec.js",
-      "file": "cypress/integration/Column6/dashBoard.spec.js",
+      "fullFile": "cypress/integration/Column6/dashboardRegression.spec.js",
+      "file": "cypress/integration/Column6/dashboardRegression.spec.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "b85c1eef-f27e-4af1-b59e-bbc318e49a4e",
+          "uuid": "f762fabc-af56-4f48-931a-2cc265d82ee2",
           "title": "Dashboard regression testing",
           "fullFile": "",
           "file": "",
@@ -35,32 +35,32 @@
           "afterHooks": [],
           "tests": [
             {
-              "title": "testLogin",
-              "fullTitle": "Dashboard regression testing testLogin",
+              "title": "demandFlow",
+              "fullTitle": "Dashboard regression testing demandFlow",
               "timedOut": null,
-              "duration": 8598,
+              "duration": 17046,
               "state": "passed",
               "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "cy.login();",
+              "code": "cy.login();\ncy.createAdvertiser();\ncy.createIO();\ncy.createCampaign();\ncy.createTagMedia();",
               "err": {},
-              "uuid": "1438815a-6075-4ebe-8733-c44601e80014",
-              "parentUUID": "b85c1eef-f27e-4af1-b59e-bbc318e49a4e",
+              "uuid": "e7dbcdee-6a1e-4523-b566-b915e27656be",
+              "parentUUID": "f762fabc-af56-4f48-931a-2cc265d82ee2",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "1438815a-6075-4ebe-8733-c44601e80014"
+            "e7dbcdee-6a1e-4523-b566-b915e27656be"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 8598,
+          "duration": 17046,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

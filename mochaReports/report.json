@@ -1,15 +1,15 @@
 {
   "stats": {
-    "suites": 3,
-    "tests": 4,
-    "passes": 4,
+    "suites": 2,
+    "tests": 2,
+    "passes": 1,
     "pending": 0,
-    "failures": 0,
-    "start": "2020-04-06T18:52:54.580Z",
-    "end": "2020-04-06T18:52:54.580Z",
-    "duration": 29067,
-    "testsRegistered": 4,
-    "passPercent": 100,
+    "failures": 1,
+    "start": "2020-04-10T18:00:20.753Z",
+    "end": "2020-04-10T18:00:20.753Z",
+    "duration": 19180,
+    "testsRegistered": 2,
+    "passPercent": 50,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,65 +18,7 @@
   },
   "results": [
     {
-      "uuid": "7fdbcfa4-c721-475e-acda-599dd452eca8",
-      "title": "",
-      "fullFile": "cypress/integration/Column6/dashBoard.spec.js",
-      "file": "cypress/integration/Column6/dashBoard.spec.js",
-      "beforeHooks": [],
-      "afterHooks": [],
-      "tests": [],
-      "suites": [
-        {
-          "uuid": "b85c1eef-f27e-4af1-b59e-bbc318e49a4e",
-          "title": "Dashboard regression testing",
-          "fullFile": "",
-          "file": "",
-          "beforeHooks": [],
-          "afterHooks": [],
-          "tests": [
-            {
-              "title": "testLogin",
-              "fullTitle": "Dashboard regression testing testLogin",
-              "timedOut": null,
-              "duration": 8598,
-              "state": "passed",
-              "speed": "slow",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "cy.login();",
-              "err": {},
-              "uuid": "1438815a-6075-4ebe-8733-c44601e80014",
-              "parentUUID": "b85c1eef-f27e-4af1-b59e-bbc318e49a4e",
-              "isHook": false,
-              "skipped": false
-            }
-          ],
-          "suites": [],
-          "passes": [
-            "1438815a-6075-4ebe-8733-c44601e80014"
-          ],
-          "failures": [],
-          "pending": [],
-          "skipped": [],
-          "duration": 8598,
-          "root": false,
-          "rootEmpty": false,
-          "_timeout": 2000
-        }
-      ],
-      "passes": [],
-      "failures": [],
-      "pending": [],
-      "skipped": [],
-      "duration": 0,
-      "root": true,
-      "rootEmpty": true,
-      "_timeout": 2000
-    },
-    {
-      "uuid": "4eeee82d-3db0-4d25-9669-37463a8e5bbb",
+      "uuid": "54c00896-0407-456a-be90-3eb17b2fd25e",
       "title": "",
       "fullFile": "cypress/integration/Column6/dashboardRegression.spec.js",
       "file": "cypress/integration/Column6/dashboardRegression.spec.js",
@@ -85,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "dd1403c7-3aeb-4fbc-aedd-c9a069b3442e",
+          "uuid": "f762fabc-af56-4f48-931a-2cc265d82ee2",
           "title": "Dashboard regression testing",
           "fullFile": "",
           "file": "",
@@ -93,28 +35,10 @@
           "afterHooks": [],
           "tests": [
             {
-              "title": "testLogin",
-              "fullTitle": "Dashboard regression testing testLogin",
+              "title": "demandFlow",
+              "fullTitle": "Dashboard regression testing demandFlow",
               "timedOut": null,
-              "duration": 6471,
-              "state": "passed",
-              "speed": "slow",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "cy.login();",
-              "err": {},
-              "uuid": "c040befc-9140-4368-bc0c-be31ea8670d3",
-              "parentUUID": "dd1403c7-3aeb-4fbc-aedd-c9a069b3442e",
-              "isHook": false,
-              "skipped": false
-            },
-            {
-              "title": "DemandFlow",
-              "fullTitle": "Dashboard regression testing DemandFlow",
-              "timedOut": null,
-              "duration": 13425,
+              "duration": 17046,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -123,21 +47,20 @@
               "context": null,
               "code": "cy.login();\ncy.createAdvertiser();\ncy.createIO();\ncy.createCampaign();\ncy.createTagMedia();",
               "err": {},
-              "uuid": "6f6a368e-97ec-465f-9564-92705526227b",
-              "parentUUID": "dd1403c7-3aeb-4fbc-aedd-c9a069b3442e",
+              "uuid": "e7dbcdee-6a1e-4523-b566-b915e27656be",
+              "parentUUID": "f762fabc-af56-4f48-931a-2cc265d82ee2",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "c040befc-9140-4368-bc0c-be31ea8670d3",
-            "6f6a368e-97ec-465f-9564-92705526227b"
+            "e7dbcdee-6a1e-4523-b566-b915e27656be"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 19896,
+          "duration": 17046,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -153,7 +76,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "732a86eb-4c58-4edc-a06a-8109a76f9d4e",
+      "uuid": "d896490e-ffcc-4273-a2ee-b528484543ce",
       "title": "",
       "fullFile": "cypress/integration/Column6/newDashboard.spec.js",
       "file": "cypress/integration/Column6/newDashboard.spec.js",
@@ -162,7 +85,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "bd33b269-c035-4b49-a0f0-5c617e6454a8",
+          "uuid": "3d1c8d7e-ca45-4150-a86d-4c65b982104d",
           "title": "New Dashboard testing",
           "fullFile": "",
           "file": "",
@@ -173,29 +96,33 @@
               "title": "DemandFlow",
               "fullTitle": "New Dashboard testing DemandFlow",
               "timedOut": null,
-              "duration": 573,
-              "state": "passed",
-              "speed": "slow",
-              "pass": true,
-              "fail": false,
+              "duration": 2134,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
               "pending": false,
               "context": null,
               "code": "cy.visit(\"http://localhost:3000\");",
-              "err": {},
-              "uuid": "9985f612-2cb8-4b6d-b97d-0d7bc3e701cb",
-              "parentUUID": "bd33b269-c035-4b49-a0f0-5c617e6454a8",
+              "err": {
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://localhost:3000/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:3000\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nThe stack trace for this error is:\n\nError: connect ECONNREFUSED 127.0.0.1:3000\n    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1128:14)\n",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://localhost:3000/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:3000\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nThe stack trace for this error is:\n\nError: connect ECONNREFUSED 127.0.0.1:3000\n    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1128:14)\n\n",
+                "diff": null
+              },
+              "uuid": "463ab048-6418-42bd-89c7-204e59b1866e",
+              "parentUUID": "3d1c8d7e-ca45-4150-a86d-4c65b982104d",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
-          "passes": [
-            "9985f612-2cb8-4b6d-b97d-0d7bc3e701cb"
+          "passes": [],
+          "failures": [
+            "463ab048-6418-42bd-89c7-204e59b1866e"
           ],
-          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 573,
+          "duration": 2134,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

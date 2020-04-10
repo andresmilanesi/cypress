@@ -8,9 +8,9 @@
         "mochawesome-report-generator": "^4.1.0"
     },
     "scripts": {
-        "deleteOldReports": "sudo rm -fr cypress/reports/mocha/*.json",
-        "mergeReports": "sudo npx mochawesome-merge cypress/reports/mocha/mochawesome*.json > mochaReports/report.json",
-        "generateReport": "sudo npx marge mochaReports/*.json -f report -o mochaReports",
+        "deleteOldReports": "rm -fr cypress/reports/mocha/*.json",
+        "mergeReports": "npx mochawesome-merge cypress/reports/mocha/mochawesome*.json > mochaReports/report.json",
+        "generateReport": "npx marge mochaReports/*.json -f report -o mochaReports",
         "fullRegression": "npm run deleteOldReports; npx cypress run; npm run mergeReports; npm run generateReport",
         "smallRegression": "npm run deleteOldReports; npx cypress run --spec 'cypress/integration/Column6/*'; npm run mergeReports; npm run generateReport"
     }
