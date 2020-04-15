@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 1,
-    "start": "2020-04-10T18:00:18.262Z",
-    "end": "2020-04-10T18:00:20.415Z",
-    "duration": 2153,
+    "start": "2020-04-13T13:36:16.777Z",
+    "end": "2020-04-13T13:36:18.952Z",
+    "duration": 2175,
     "testsRegistered": 1,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "d896490e-ffcc-4273-a2ee-b528484543ce",
+      "uuid": "b50376eb-0250-473a-b024-4454d2774eb9",
       "title": "",
       "fullFile": "cypress/integration/Column6/newDashboard.spec.js",
       "file": "cypress/integration/Column6/newDashboard.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "3d1c8d7e-ca45-4150-a86d-4c65b982104d",
+          "uuid": "36a867f6-e655-4da8-ac39-f7e40c29a415",
           "title": "New Dashboard testing",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "DemandFlow",
               "fullTitle": "New Dashboard testing DemandFlow",
               "timedOut": null,
-              "duration": 2134,
+              "duration": 2157,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -51,8 +51,8 @@
                 "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://localhost:3000/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:3000\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nThe stack trace for this error is:\n\nError: connect ECONNREFUSED 127.0.0.1:3000\n    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1128:14)\n\n",
                 "diff": null
               },
-              "uuid": "463ab048-6418-42bd-89c7-204e59b1866e",
-              "parentUUID": "3d1c8d7e-ca45-4150-a86d-4c65b982104d",
+              "uuid": "aedce0c1-1c33-4dda-ab23-9041178111ad",
+              "parentUUID": "36a867f6-e655-4da8-ac39-f7e40c29a415",
               "isHook": false,
               "skipped": false
             }
@@ -60,11 +60,11 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "463ab048-6418-42bd-89c7-204e59b1866e"
+            "aedce0c1-1c33-4dda-ab23-9041178111ad"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 2134,
+          "duration": 2157,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

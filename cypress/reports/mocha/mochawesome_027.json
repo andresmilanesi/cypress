@@ -1,24 +1,24 @@
 {
   "stats": {
     "suites": 1,
-    "tests": 1,
-    "passes": 1,
+    "tests": 0,
+    "passes": 0,
     "pending": 0,
     "failures": 0,
-    "start": "2020-04-13T13:35:58.662Z",
-    "end": "2020-04-13T13:36:15.811Z",
-    "duration": 17149,
+    "start": "2020-04-15T16:29:40.232Z",
+    "end": "2020-04-15T16:29:44.908Z",
+    "duration": 4676,
     "testsRegistered": 1,
-    "passPercent": 100,
+    "passPercent": 0,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
-    "skipped": 0,
-    "hasSkipped": false
+    "skipped": 1,
+    "hasSkipped": true
   },
   "results": [
     {
-      "uuid": "5e08c4cc-19bc-4bf3-b74e-957f3d27d061",
+      "uuid": "aa003d5f-7578-4a6a-904c-4ac991a5fa5d",
       "title": "",
       "fullFile": "cypress/integration/Column6/dashboardRegression.spec.js",
       "file": "cypress/integration/Column6/dashboardRegression.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "5297cbc3-826c-4370-b590-c61850ca3527",
+          "uuid": "8477b647-ea9e-481e-97e7-293c292fe460",
           "title": "Dashboard regression testing",
           "fullFile": "",
           "file": "",
@@ -38,29 +38,29 @@
               "title": "demandFlow",
               "fullTitle": "Dashboard regression testing demandFlow",
               "timedOut": null,
-              "duration": 17109,
-              "state": "passed",
-              "speed": "slow",
-              "pass": true,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "cy.login();\ncy.createAdvertiser();\ncy.createIO();\ncy.createCampaign();\ncy.createTagMedia();",
               "err": {},
-              "uuid": "129060ec-1d10-4b2e-8001-3b5c3cf07ead",
-              "parentUUID": "5297cbc3-826c-4370-b590-c61850ca3527",
+              "uuid": "7579a33c-62e7-458b-b90d-85a2825dff51",
+              "parentUUID": "8477b647-ea9e-481e-97e7-293c292fe460",
               "isHook": false,
-              "skipped": false
+              "skipped": true
             }
           ],
           "suites": [],
-          "passes": [
-            "129060ec-1d10-4b2e-8001-3b5c3cf07ead"
-          ],
+          "passes": [],
           "failures": [],
           "pending": [],
-          "skipped": [],
-          "duration": 17109,
+          "skipped": [
+            "7579a33c-62e7-458b-b90d-85a2825dff51"
+          ],
+          "duration": 0,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
