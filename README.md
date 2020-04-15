@@ -1,11 +1,11 @@
-How to install:
+# How to install:
 
 - Install latest node and npm stable versions
 - Create a folder, open a terminal and go to that folder path
 - Run the following command: npm install cypress
 
 
-How to open and run Cypress test cases:
+# How to open and run Cypress test cases:
 
 - In order to open Cypress playground (that's the name for Cypress UI) you need to run the following command > npx cypress open
 	- Here you'll see many example test scenarios
@@ -17,7 +17,7 @@ How to open and run Cypress test cases:
 - In order to run on specific environments, you can pass the --env parameter, right now we specified 3 environments, qa, int and prod. For example > npx cypress run --env name=qa
 
 
-How to run and obtain reports
+# How to run and obtain reports
 
 
 - Mochawesome
