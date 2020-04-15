@@ -1,5 +1,4 @@
 {
-    "baseUrl":"https://manageint1.altitude-arena.com",
     "video":false,
     "screenShotFolder":"cypress/videos",
     "reporter": "cypress-multi-reporters",
