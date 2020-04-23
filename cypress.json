@@ -1,8 +1,11 @@
 {
-    "video":false,
-    "screenShotFolder":"cypress/videos",
-    "reporter": "cypress-multi-reporters",
-    "reporterOptions": {
-        "configFile": "reporterOptions.json"
-    }
+  "video": false,
+  "screenShotFolder": "cypress/videos",
+  "reporter": "cypress-multi-reporters",
+  "reporterOptions": {
+    "configFile": "reporterOptions.json"
+  },
+  "viewportWidth": 1366,
+  "viewportHeight": 768,
+  "projectId": "bg9y22"
 }

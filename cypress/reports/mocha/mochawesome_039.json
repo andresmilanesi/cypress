@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-04-23T18:33:38.658Z",
+    "end": "2020-04-23T18:33:54.566Z",
+    "duration": 15908,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "5fb8fe63-7eaf-4b71-971a-f4a2f42f9833",
+      "title": "",
+      "fullFile": "cypress/integration/examples/ea.spec.js",
+      "file": "cypress/integration/examples/ea.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "39bf50d2-db61-4db3-bb64-77d9c15f9565",
+          "title": "Testing ea app",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login",
+              "fullTitle": "Testing ea app Login",
+              "timedOut": null,
+              "duration": 6308,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"http://eaapp.somee.com/\");\ncy.contains(\"Login\").click();\ncy.url().should(\"include\", \"/Account/Login\");\ncy.get(\"#UserName\").type(\"admin\");\ncy.get(\"#Password\").type(\"password\");\ncy.get(\".btn\").click();",
+              "err": {},
+              "uuid": "6cb26776-a4ed-4439-a4d5-1c5f4259863d",
+              "parentUUID": "39bf50d2-db61-4db3-bb64-77d9c15f9565",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "6cb26776-a4ed-4439-a4d5-1c5f4259863d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6308,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.1.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "5.0.0"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "4.1.0"
+    }
+  }
+}
