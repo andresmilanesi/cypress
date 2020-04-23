@@ -24,21 +24,15 @@ module.exports = (on, config) => {
     // We are using the file passed on --env, if not provided use int as default
     const file = config.env.name || "int"
     return getConfigFile(file).then(function (file) {
-
       // Return file object
       return file;
-
     })
-
   }
 
   function getConfigFile(file) {
-
     const pathToConfigFile = path.resolve('cypress', 'config', `${file}.json`)
     return fs.readJson(pathToConfigFile)
-
   }
   // Return the configuration file details
   return processConfigName(on, config);
-
 }
