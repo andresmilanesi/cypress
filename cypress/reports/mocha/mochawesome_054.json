@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-04-24T14:59:22.148Z",
+    "end": "2020-04-24T14:59:22.806Z",
+    "duration": 658,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "0dee33d9-8f42-4fe8-8519-88e50891239b",
+      "title": "",
+      "fullFile": "cypress/integration/Column6/newDashboard.spec.js",
+      "file": "cypress/integration/Column6/newDashboard.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8b9c58c3-a1eb-4511-9800-224c0dde1564",
+          "title": "New Dashboard testing",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "DemandFlow",
+              "fullTitle": "New Dashboard testing DemandFlow",
+              "timedOut": null,
+              "duration": 644,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"/\");",
+              "err": {},
+              "uuid": "5d88ae91-b493-4c56-90cf-4a6da46e27d5",
+              "parentUUID": "8b9c58c3-a1eb-4511-9800-224c0dde1564",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "5d88ae91-b493-4c56-90cf-4a6da46e27d5"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 644,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.1.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "5.0.0"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "4.1.0"
+    }
+  }
+}
