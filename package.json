@@ -1,4 +1,14 @@
 {
+    "version": "1.0.0",
+    "description": "A cypress framework to test different functionalities",
+    "scripts": {
+        "deleteOldReports": "rm -fr cypress/reports/mocha/*.json",
+        "mergeReports": "npx mochawesome-merge cypress/reports/mocha/mochawesome*.json > mochaReports/report.json",
+        "generateReport": "npx marge mochaReports/*.json -f report -o mochaReports",
+        "fullRegression": "npm run deleteOldReports; npx cypress run; npm run mergeReports; npm run generateReport",
+        "smallRegression": "npm run deleteOldReports; npx cypress run --spec 'cypress/integration/Column6/*'; npm run mergeReports; npm run generateReport"
+    },
+
     "devDependencies": {
         "cypress": "^4.3.0",
         "cypress-multi-reporters": "^1.2.4",
@@ -6,12 +16,6 @@
         "mochawesome": "^5.0.0",
         "mochawesome-merge": "^4.0.3",
         "mochawesome-report-generator": "^4.1.0"
-    },
-    "scripts": {
-        "deleteOldReports": "rm -fr cypress/reports/mocha/*.json",
-        "mergeReports": "npx mochawesome-merge cypress/reports/mocha/mochawesome*.json > mochaReports/report.json",
-        "generateReport": "npx marge mochaReports/*.json -f report -o mochaReports",
-        "fullRegression": "npm run deleteOldReports; npx cypress run; npm run mergeReports; npm run generateReport",
-        "smallRegression": "npm run deleteOldReports; npx cypress run --spec 'cypress/integration/Column6/*'; npm run mergeReports; npm run generateReport"
     }
+
 }
