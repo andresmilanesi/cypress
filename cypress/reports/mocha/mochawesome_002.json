@@ -1,0 +1,144 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-05-04T18:38:44.191Z",
+    "end": "2020-05-04T18:38:47.694Z",
+    "duration": 3503,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b1553e7e-0976-44e8-8a30-065afc010bc8",
+      "title": "",
+      "fullFile": "cypress/integration/Column6/requests.spec.js",
+      "file": "cypress/integration/Column6/requests.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c9bdcc4a-5795-4176-b6cf-8013bebc260a",
+          "title": "Requests testing",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Get request",
+              "fullTitle": "Requests testing Get request",
+              "timedOut": null,
+              "duration": 1450,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.request('https://jsonplaceholder.cypress.io/comments').then(function (response) {\n  expect(response.status).to.eq(200);\n  expect(response.body).to.have.length(500);\n  expect(response).to.have.property('headers');\n  expect(response).to.have.property('duration');\n});",
+              "err": {},
+              "uuid": "87e704b8-9b3c-4b23-9b47-ddf7df48a4bb",
+              "parentUUID": "c9bdcc4a-5795-4176-b6cf-8013bebc260a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Delete request",
+              "fullTitle": "Requests testing Delete request",
+              "timedOut": null,
+              "duration": 1546,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.request('DELETE', 'https://reqres.in/api/users/2').then(function (response) {\n  expect(response.status).to.eq(204);\n});",
+              "err": {},
+              "uuid": "4a50a9f6-391f-4a09-8993-7a566d392c26",
+              "parentUUID": "c9bdcc4a-5795-4176-b6cf-8013bebc260a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Post request",
+              "fullTitle": "Requests testing Post request",
+              "timedOut": null,
+              "duration": 468,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.request({\n  method: 'POST',\n  url: 'https://reqres.in/api/users',\n  form: true,\n  // indicates the body should be form urlencoded and sets Content-Type: application/x-www-form-urlencoded headers\n  body: {\n    \"name\": \"morpheus\",\n    \"job\": \"leader\"\n  }\n}).then(function (response) {\n  expect(response.status).to.eq(201);\n});",
+              "err": {},
+              "uuid": "58bc4dfc-78d1-4a51-8cc3-078950bd1ffc",
+              "parentUUID": "c9bdcc4a-5795-4176-b6cf-8013bebc260a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "87e704b8-9b3c-4b23-9b47-ddf7df48a4bb",
+            "4a50a9f6-391f-4a09-8993-7a566d392c26",
+            "58bc4dfc-78d1-4a51-8cc3-078950bd1ffc"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3464,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.1.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "5.0.0"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "4.1.0"
+    }
+  }
+}

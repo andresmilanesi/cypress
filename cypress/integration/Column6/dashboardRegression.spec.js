@@ -4,11 +4,11 @@ describe("Dashboard regression testing", () => {
 
     it("demandFlow", () => {
 
-        cy.login();
-        cy.createAdvertiser();
-        cy.createIO();
-        cy.createCampaign();
-        cy.createTagMedia();
+        cy.login()
+        cy.createAdvertiser()
+        cy.createIO()
+        cy.createCampaign()
+        cy.createTagMedia()
 
     })
 
