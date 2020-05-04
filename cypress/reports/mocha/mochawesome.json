@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2020-04-13T13:35:58.662Z",
-    "end": "2020-04-13T13:36:15.811Z",
-    "duration": 17149,
+    "start": "2020-05-04T17:52:50.499Z",
+    "end": "2020-05-04T17:53:07.222Z",
+    "duration": 16723,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "5e08c4cc-19bc-4bf3-b74e-957f3d27d061",
+      "uuid": "a1bc66d5-a36d-4f2d-8557-60005678385c",
       "title": "",
       "fullFile": "cypress/integration/Column6/dashboardRegression.spec.js",
       "file": "cypress/integration/Column6/dashboardRegression.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "5297cbc3-826c-4370-b590-c61850ca3527",
+          "uuid": "4f19a3ef-4b69-4859-836a-f971791676dd",
           "title": "Dashboard regression testing",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "demandFlow",
               "fullTitle": "Dashboard regression testing demandFlow",
               "timedOut": null,
-              "duration": 17109,
+              "duration": 16682,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.login();\ncy.createAdvertiser();\ncy.createIO();\ncy.createCampaign();\ncy.createTagMedia();",
               "err": {},
-              "uuid": "129060ec-1d10-4b2e-8001-3b5c3cf07ead",
-              "parentUUID": "5297cbc3-826c-4370-b590-c61850ca3527",
+              "uuid": "d782a81e-bc42-4c88-9153-640177917c14",
+              "parentUUID": "4f19a3ef-4b69-4859-836a-f971791676dd",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "129060ec-1d10-4b2e-8001-3b5c3cf07ead"
+            "d782a81e-bc42-4c88-9153-640177917c14"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 17109,
+          "duration": 16682,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -78,7 +78,7 @@
   ],
   "meta": {
     "mocha": {
-      "version": "7.1.1"
+      "version": "7.0.1"
     },
     "mochawesome": {
       "options": {

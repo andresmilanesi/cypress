@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 1,
-    "start": "2020-04-13T13:36:16.777Z",
-    "end": "2020-04-13T13:36:18.952Z",
-    "duration": 2175,
+    "start": "2020-05-04T17:53:08.383Z",
+    "end": "2020-05-04T17:53:14.390Z",
+    "duration": 6007,
     "testsRegistered": 1,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "b50376eb-0250-473a-b024-4454d2774eb9",
+      "uuid": "55e94887-65b4-4b9b-8b33-c804b0c57959",
       "title": "",
       "fullFile": "cypress/integration/Column6/newDashboard.spec.js",
       "file": "cypress/integration/Column6/newDashboard.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "36a867f6-e655-4da8-ac39-f7e40c29a415",
+          "uuid": "95de52e3-edfa-4e26-ae3c-971772cd269c",
           "title": "New Dashboard testing",
           "fullFile": "",
           "file": "",
@@ -35,24 +35,24 @@
           "afterHooks": [],
           "tests": [
             {
-              "title": "DemandFlow",
-              "fullTitle": "New Dashboard testing DemandFlow",
+              "title": "Local Testing",
+              "fullTitle": "New Dashboard testing Local Testing",
               "timedOut": null,
-              "duration": 2157,
+              "duration": 4953,
               "state": "failed",
               "speed": null,
               "pass": false,
               "fail": true,
               "pending": false,
               "context": null,
-              "code": "cy.visit(\"http://localhost:3000\");",
+              "code": "cy.visit(\"http://localhost:3000\");\ncy.get('[aria-label=\"reporting menu\"]').should(\"exist\");\ncy.get('.MuiContainer-root > :nth-child(1)').should(\"contain.text\", \"Route not found or under construction Oops!\");",
               "err": {
-                "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://localhost:3000/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:3000\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nThe stack trace for this error is:\n\nError: connect ECONNREFUSED 127.0.0.1:3000\n    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1128:14)\n",
-                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://localhost:3000/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:3000\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nThe stack trace for this error is:\n\nError: connect ECONNREFUSED 127.0.0.1:3000\n    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1128:14)\n\n",
-                "diff": null
+                "message": "AssertionError: Timed out retrying: expected '<p.MuiTypography-root.MuiTypography-body1>' to contain text 'Route not found or under construction Oops!', but the text was 'Route not found or under construction'",
+                "estack": "AssertionError: Timed out retrying: expected '<p.MuiTypography-root.MuiTypography-body1>' to contain text 'Route not found or under construction Oops!', but the text was 'Route not found or under construction'\n    at applyChainer (http://localhost:3000/__cypress/runner/cypress_runner.js:131898:32)\n    at http://localhost:3000/__cypress/runner/cypress_runner.js:131940:16\n    at arrayReduce (http://localhost:3000/__cypress/runner/cypress_runner.js:18578:21)\n    at Function.reduce (http://localhost:3000/__cypress/runner/cypress_runner.js:27576:14)\n    at applyChainers (http://localhost:3000/__cypress/runner/cypress_runner.js:131929:22)\n    at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:9065:23)\n    at Function.Promise.attempt.Promise.try (http://localhost:3000/__cypress/runner/cypress_runner.js:6339:29)\n    at Context.shouldFn (http://localhost:3000/__cypress/runner/cypress_runner.js:131946:26)\n    at Context.should (http://localhost:3000/__cypress/runner/cypress_runner.js:131964:23)\n    at http://localhost:3000/__cypress/runner/cypress_runner.js:127819:39\n    at assertions (http://localhost:3000/__cypress/runner/cypress_runner.js:128079:14)\n    at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:9065:23)\n    at Object.gotValue (http://localhost:3000/__cypress/runner/cypress_runner.js:8209:18)\n    at Object.gotAccum (http://localhost:3000/__cypress/runner/cypress_runner.js:8196:25)\n    at Object.tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:9065:23)\n    at Promise._settlePromiseFromHandler (http://localhost:3000/__cypress/runner/cypress_runner.js:7000:31)",
+                "diff": "- 'Route not found or under construction'\n+ 'Route not found or under construction Oops!'\n"
               },
-              "uuid": "aedce0c1-1c33-4dda-ab23-9041178111ad",
-              "parentUUID": "36a867f6-e655-4da8-ac39-f7e40c29a415",
+              "uuid": "354c353f-95cd-461c-ad9a-cde94a37f3e4",
+              "parentUUID": "95de52e3-edfa-4e26-ae3c-971772cd269c",
               "isHook": false,
               "skipped": false
             }
@@ -60,11 +60,11 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "aedce0c1-1c33-4dda-ab23-9041178111ad"
+            "354c353f-95cd-461c-ad9a-cde94a37f3e4"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 2157,
+          "duration": 4953,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -82,7 +82,7 @@
   ],
   "meta": {
     "mocha": {
-      "version": "7.1.1"
+      "version": "7.0.1"
     },
     "mochawesome": {
       "options": {
