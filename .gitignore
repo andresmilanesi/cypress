@@ -1,0 +1,4 @@
+cypress/cypress/reports/mocha/*.json
+cypress/cypress/reports/mocha/*.html
+mochaReports/*.json
+mochaReports/*.html
