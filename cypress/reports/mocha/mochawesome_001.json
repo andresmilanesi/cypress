@@ -5,9 +5,9 @@
     "passes": 3,
     "pending": 0,
     "failures": 0,
-    "start": "2020-05-05T16:07:22.342Z",
-    "end": "2020-05-05T16:07:22.437Z",
-    "duration": 95,
+    "start": "2020-05-05T17:41:07.146Z",
+    "end": "2020-05-05T17:41:07.242Z",
+    "duration": 96,
     "testsRegistered": 3,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "130a513b-5591-45ed-844c-095a14a8e6dc",
+      "uuid": "a13fc1c1-39ad-489b-a61b-f652d68f3245",
       "title": "",
       "fullFile": "cypress/integration/Column6/hooksTest.spec.js",
       "file": "cypress/integration/Column6/hooksTest.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "7d1e10fc-30cf-454f-aeae-25cb5c47e00b",
+          "uuid": "6925c6c4-c876-48b6-bad6-751c2d9ecf2c",
           "title": "Testing some hooks",
           "fullFile": "",
           "file": "",
@@ -47,8 +47,8 @@
               "context": null,
               "code": "cy.log('*****This is test 1!*****');",
               "err": {},
-              "uuid": "533c0635-671f-4ed8-ac21-be1ec255c20d",
-              "parentUUID": "7d1e10fc-30cf-454f-aeae-25cb5c47e00b",
+              "uuid": "6302c60a-8c9e-4a3f-93ce-f8024c5db82f",
+              "parentUUID": "6925c6c4-c876-48b6-bad6-751c2d9ecf2c",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "Test 2",
               "fullTitle": "Testing some hooks Test 2",
               "timedOut": null,
-              "duration": 10,
+              "duration": 11,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -65,8 +65,8 @@
               "context": null,
               "code": "cy.log(\"*****This is test 2!*****\");",
               "err": {},
-              "uuid": "951f0980-617b-4d08-876b-620be146d2ae",
-              "parentUUID": "7d1e10fc-30cf-454f-aeae-25cb5c47e00b",
+              "uuid": "1d6efefd-4285-4360-a176-7cf1c1e1cd43",
+              "parentUUID": "6925c6c4-c876-48b6-bad6-751c2d9ecf2c",
               "isHook": false,
               "skipped": false
             },
@@ -74,7 +74,7 @@
               "title": "Test 3",
               "fullTitle": "Testing some hooks Test 3",
               "timedOut": null,
-              "duration": 10,
+              "duration": 11,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -83,22 +83,22 @@
               "context": null,
               "code": "cy.log(\"*****This is test 3!*****\");",
               "err": {},
-              "uuid": "ea1e2b55-52c0-4fed-b414-e8f1a939647c",
-              "parentUUID": "7d1e10fc-30cf-454f-aeae-25cb5c47e00b",
+              "uuid": "a8f802ae-e22d-4a3d-aaee-2bd893e2d8f8",
+              "parentUUID": "6925c6c4-c876-48b6-bad6-751c2d9ecf2c",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "533c0635-671f-4ed8-ac21-be1ec255c20d",
-            "951f0980-617b-4d08-876b-620be146d2ae",
-            "ea1e2b55-52c0-4fed-b414-e8f1a939647c"
+            "6302c60a-8c9e-4a3f-93ce-f8024c5db82f",
+            "1d6efefd-4285-4360-a176-7cf1c1e1cd43",
+            "a8f802ae-e22d-4a3d-aaee-2bd893e2d8f8"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 64,
+          "duration": 66,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2020-05-05T16:07:03.706Z",
-    "end": "2020-05-05T16:07:21.462Z",
-    "duration": 17756,
+    "start": "2020-05-05T17:40:48.610Z",
+    "end": "2020-05-05T17:41:06.120Z",
+    "duration": 17510,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "672bf157-67fd-427e-8a62-ca7ddc5bdbe8",
+      "uuid": "9c1ee0ae-0cb4-4647-9472-9865bd002361",
       "title": "",
       "fullFile": "cypress/integration/Column6/dashboardRegression.spec.js",
       "file": "cypress/integration/Column6/dashboardRegression.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "40b43dd9-389d-4082-a812-aab711dd7c4a",
+          "uuid": "ab2e09d7-b1da-425c-b3da-e6eb7e709b8e",
           "title": "Dashboard regression testing",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "demandFlow",
               "fullTitle": "Dashboard regression testing demandFlow",
               "timedOut": null,
-              "duration": 17689,
+              "duration": 17462,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.login();\ncy.createAdvertiser();\ncy.createIO();\ncy.createCampaign();\ncy.createTagMedia();",
               "err": {},
-              "uuid": "3ed62f27-50e1-4e91-b5a2-1656d65d8097",
-              "parentUUID": "40b43dd9-389d-4082-a812-aab711dd7c4a",
+              "uuid": "345820ff-ac5b-4ba6-a7da-d4407e1d9657",
+              "parentUUID": "ab2e09d7-b1da-425c-b3da-e6eb7e709b8e",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "3ed62f27-50e1-4e91-b5a2-1656d65d8097"
+            "345820ff-ac5b-4ba6-a7da-d4407e1d9657"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 17689,
+          "duration": 17462,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

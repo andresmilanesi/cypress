@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 1,
-    "start": "2020-05-05T16:07:24.080Z",
-    "end": "2020-05-05T16:07:29.768Z",
-    "duration": 5688,
+    "start": "2020-05-05T17:41:08.844Z",
+    "end": "2020-05-05T17:41:14.339Z",
+    "duration": 5495,
     "testsRegistered": 1,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "8a17d9a1-10f3-4183-8399-1cc65036591a",
+      "uuid": "6eae7ea7-441d-45b1-894c-bd749aa094dd",
       "title": "",
       "fullFile": "cypress/integration/Column6/newDashboard.spec.js",
       "file": "cypress/integration/Column6/newDashboard.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "b0bddd19-b0b9-4704-97e3-5beb21490082",
+          "uuid": "718c628c-b36f-43bb-9cca-b48ba6fc7ac1",
           "title": "New Dashboard testing",
           "fullFile": "",
           "file": "",
@@ -38,21 +38,21 @@
               "title": "DemandFlow",
               "fullTitle": "New Dashboard testing DemandFlow",
               "timedOut": null,
-              "duration": 4885,
+              "duration": 4731,
               "state": "failed",
               "speed": null,
               "pass": false,
               "fail": true,
               "pending": false,
               "context": null,
-              "code": "cy.visit(\"http://localhost:3000\");\ncy.contains(\"Route not found or under construction OOPS!\").should(\"exist\");",
+              "code": "cy.visit(\"http://localhost:3000\");\ncy.get('.MuiContainer-root > :nth-child(1)').should(\"contain.text\", \"Route not found or under construction OOPS!\");",
               "err": {
-                "message": "AssertionError: Timed out retrying: Expected to find content: 'Route not found or under construction OOPS!' but never did.",
-                "estack": "AssertionError: Timed out retrying: Expected to find content: 'Route not found or under construction OOPS!' but never did.\n    at ensureExistence (http://localhost:3000/__cypress/runner/cypress_runner.js:137261:32)\n    at Object.ensureElExistence (http://localhost:3000/__cypress/runner/cypress_runner.js:137279:12)\n    at ensureExistence (http://localhost:3000/__cypress/runner/cypress_runner.js:127867:23)\n    at onFailFn (http://localhost:3000/__cypress/runner/cypress_runner.js:127905:9)\n    at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:9059:23)\n    at Promise._settlePromiseFromHandler (http://localhost:3000/__cypress/runner/cypress_runner.js:6994:31)\n    at Promise._settlePromise (http://localhost:3000/__cypress/runner/cypress_runner.js:7051:18)\n    at Promise._settlePromise0 (http://localhost:3000/__cypress/runner/cypress_runner.js:7096:10)\n    at Promise._settlePromises (http://localhost:3000/__cypress/runner/cypress_runner.js:7172:18)\n    at _drainQueueStep (http://localhost:3000/__cypress/runner/cypress_runner.js:3766:12)\n    at _drainQueue (http://localhost:3000/__cypress/runner/cypress_runner.js:3759:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:3775:5)\n    at Async.drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:3645:14)",
-                "diff": null
+                "message": "AssertionError: Timed out retrying: expected '<p.MuiTypography-root.MuiTypography-body1>' to contain text 'Route not found or under construction OOPS!', but the text was 'Route not found or under construction'",
+                "estack": "AssertionError: Timed out retrying: expected '<p.MuiTypography-root.MuiTypography-body1>' to contain text 'Route not found or under construction OOPS!', but the text was 'Route not found or under construction'\n    at applyChainer (http://localhost:3000/__cypress/runner/cypress_runner.js:131707:32)\n    at http://localhost:3000/__cypress/runner/cypress_runner.js:131748:16\n    at arrayReduce (http://localhost:3000/__cypress/runner/cypress_runner.js:18403:21)\n    at Function.reduce (http://localhost:3000/__cypress/runner/cypress_runner.js:27401:14)\n    at applyChainers (http://localhost:3000/__cypress/runner/cypress_runner.js:131738:18)\n    at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:9059:23)\n    at Function.Promise.attempt.Promise.try (http://localhost:3000/__cypress/runner/cypress_runner.js:6333:29)\n    at Context.shouldFn (http://localhost:3000/__cypress/runner/cypress_runner.js:131752:23)\n    at Context.should (http://localhost:3000/__cypress/runner/cypress_runner.js:131767:23)\n    at http://localhost:3000/__cypress/runner/cypress_runner.js:127819:39\n    at assertions (http://localhost:3000/__cypress/runner/cypress_runner.js:128079:14)\n    at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:9059:23)\n    at Object.gotValue (http://localhost:3000/__cypress/runner/cypress_runner.js:8203:18)\n    at Object.gotAccum (http://localhost:3000/__cypress/runner/cypress_runner.js:8190:25)\n    at Object.tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:9059:23)\n    at Promise._settlePromiseFromHandler (http://localhost:3000/__cypress/runner/cypress_runner.js:6994:31)",
+                "diff": "- 'Route not found or under construction'\n+ 'Route not found or under construction OOPS!'\n"
               },
-              "uuid": "90d1aaa8-7d8a-4317-8e0c-dcce91b0a2d4",
-              "parentUUID": "b0bddd19-b0b9-4704-97e3-5beb21490082",
+              "uuid": "59db8af4-e623-4cba-8f0b-1affa8956b7f",
+              "parentUUID": "718c628c-b36f-43bb-9cca-b48ba6fc7ac1",
               "isHook": false,
               "skipped": false
             }
@@ -60,11 +60,11 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "90d1aaa8-7d8a-4317-8e0c-dcce91b0a2d4"
+            "59db8af4-e623-4cba-8f0b-1affa8956b7f"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 4885,
+          "duration": 4731,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
