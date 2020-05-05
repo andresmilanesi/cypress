@@ -1,8 +1,9 @@
 {
-    "video":false,
-    "screenShotFolder":"cypress/videos",
-    "reporter": "cypress-multi-reporters",
-    "reporterOptions": {
-        "configFile": "reporterOptions.json"
-    }
+  "video": false,
+  "screenShotFolder": "cypress/videos",
+  "reporter": "cypress-multi-reporters",
+  "reporterOptions": {
+    "configFile": "reporterOptions.json"
+  },
+  "projectId": "c4wvyi"
 }

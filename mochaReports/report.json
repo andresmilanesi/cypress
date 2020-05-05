@@ -1,15 +1,15 @@
 {
   "stats": {
-    "suites": 3,
-    "tests": 5,
-    "passes": 5,
+    "suites": 4,
+    "tests": 8,
+    "passes": 7,
     "pending": 0,
-    "failures": 0,
-    "start": "2020-05-04T18:38:48.021Z",
-    "end": "2020-05-04T18:38:48.021Z",
-    "duration": 20280,
-    "testsRegistered": 5,
-    "passPercent": 100,
+    "failures": 1,
+    "start": "2020-05-05T16:07:34.840Z",
+    "end": "2020-05-05T16:07:34.840Z",
+    "duration": 26291,
+    "testsRegistered": 8,
+    "passPercent": 87.5,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "d7b648dc-a3ab-4294-b505-b3b54cef7033",
+      "uuid": "672bf157-67fd-427e-8a62-ca7ddc5bdbe8",
       "title": "",
       "fullFile": "cypress/integration/Column6/dashboardRegression.spec.js",
       "file": "cypress/integration/Column6/dashboardRegression.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "66734dab-8005-4e1f-8dfe-6488621fa856",
+          "uuid": "40b43dd9-389d-4082-a812-aab711dd7c4a",
           "title": "Dashboard regression testing",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "demandFlow",
               "fullTitle": "Dashboard regression testing demandFlow",
               "timedOut": null,
-              "duration": 16261,
+              "duration": 17689,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.login();\ncy.createAdvertiser();\ncy.createIO();\ncy.createCampaign();\ncy.createTagMedia();",
               "err": {},
-              "uuid": "64742975-20b4-46c2-a064-80efce1f428b",
-              "parentUUID": "66734dab-8005-4e1f-8dfe-6488621fa856",
+              "uuid": "3ed62f27-50e1-4e91-b5a2-1656d65d8097",
+              "parentUUID": "40b43dd9-389d-4082-a812-aab711dd7c4a",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "64742975-20b4-46c2-a064-80efce1f428b"
+            "3ed62f27-50e1-4e91-b5a2-1656d65d8097"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 16261,
+          "duration": 17689,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -76,7 +76,103 @@
       "_timeout": 2000
     },
     {
-      "uuid": "c94c21c6-f122-46b6-a40a-743fdb34ee4a",
+      "uuid": "130a513b-5591-45ed-844c-095a14a8e6dc",
+      "title": "",
+      "fullFile": "cypress/integration/Column6/hooksTest.spec.js",
+      "file": "cypress/integration/Column6/hooksTest.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7d1e10fc-30cf-454f-aeae-25cb5c47e00b",
+          "title": "Testing some hooks",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test 1",
+              "fullTitle": "Testing some hooks Test 1",
+              "timedOut": null,
+              "duration": 44,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.log('*****This is test 1!*****');",
+              "err": {},
+              "uuid": "533c0635-671f-4ed8-ac21-be1ec255c20d",
+              "parentUUID": "7d1e10fc-30cf-454f-aeae-25cb5c47e00b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test 2",
+              "fullTitle": "Testing some hooks Test 2",
+              "timedOut": null,
+              "duration": 10,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.log(\"*****This is test 2!*****\");",
+              "err": {},
+              "uuid": "951f0980-617b-4d08-876b-620be146d2ae",
+              "parentUUID": "7d1e10fc-30cf-454f-aeae-25cb5c47e00b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test 3",
+              "fullTitle": "Testing some hooks Test 3",
+              "timedOut": null,
+              "duration": 10,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.log(\"*****This is test 3!*****\");",
+              "err": {},
+              "uuid": "ea1e2b55-52c0-4fed-b414-e8f1a939647c",
+              "parentUUID": "7d1e10fc-30cf-454f-aeae-25cb5c47e00b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "533c0635-671f-4ed8-ac21-be1ec255c20d",
+            "951f0980-617b-4d08-876b-620be146d2ae",
+            "ea1e2b55-52c0-4fed-b414-e8f1a939647c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 64,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "8a17d9a1-10f3-4183-8399-1cc65036591a",
       "title": "",
       "fullFile": "cypress/integration/Column6/newDashboard.spec.js",
       "file": "cypress/integration/Column6/newDashboard.spec.js",
@@ -85,7 +181,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "e49ad1ee-1718-4833-8ddb-581023c4034f",
+          "uuid": "b0bddd19-b0b9-4704-97e3-5beb21490082",
           "title": "New Dashboard testing",
           "fullFile": "",
           "file": "",
@@ -96,29 +192,33 @@
               "title": "DemandFlow",
               "fullTitle": "New Dashboard testing DemandFlow",
               "timedOut": null,
-              "duration": 555,
-              "state": "passed",
-              "speed": "slow",
-              "pass": true,
-              "fail": false,
+              "duration": 4885,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
               "pending": false,
               "context": null,
-              "code": "cy.visit(\"http://localhost:3000\");",
-              "err": {},
-              "uuid": "8aeda7e0-43b7-4324-89d3-87f0b5c1a5e0",
-              "parentUUID": "e49ad1ee-1718-4833-8ddb-581023c4034f",
+              "code": "cy.visit(\"http://localhost:3000\");\ncy.contains(\"Route not found or under construction OOPS!\").should(\"exist\");",
+              "err": {
+                "message": "AssertionError: Timed out retrying: Expected to find content: 'Route not found or under construction OOPS!' but never did.",
+                "estack": "AssertionError: Timed out retrying: Expected to find content: 'Route not found or under construction OOPS!' but never did.\n    at ensureExistence (http://localhost:3000/__cypress/runner/cypress_runner.js:137261:32)\n    at Object.ensureElExistence (http://localhost:3000/__cypress/runner/cypress_runner.js:137279:12)\n    at ensureExistence (http://localhost:3000/__cypress/runner/cypress_runner.js:127867:23)\n    at onFailFn (http://localhost:3000/__cypress/runner/cypress_runner.js:127905:9)\n    at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:9059:23)\n    at Promise._settlePromiseFromHandler (http://localhost:3000/__cypress/runner/cypress_runner.js:6994:31)\n    at Promise._settlePromise (http://localhost:3000/__cypress/runner/cypress_runner.js:7051:18)\n    at Promise._settlePromise0 (http://localhost:3000/__cypress/runner/cypress_runner.js:7096:10)\n    at Promise._settlePromises (http://localhost:3000/__cypress/runner/cypress_runner.js:7172:18)\n    at _drainQueueStep (http://localhost:3000/__cypress/runner/cypress_runner.js:3766:12)\n    at _drainQueue (http://localhost:3000/__cypress/runner/cypress_runner.js:3759:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:3775:5)\n    at Async.drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:3645:14)",
+                "diff": null
+              },
+              "uuid": "90d1aaa8-7d8a-4317-8e0c-dcce91b0a2d4",
+              "parentUUID": "b0bddd19-b0b9-4704-97e3-5beb21490082",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
-          "passes": [
-            "8aeda7e0-43b7-4324-89d3-87f0b5c1a5e0"
+          "passes": [],
+          "failures": [
+            "90d1aaa8-7d8a-4317-8e0c-dcce91b0a2d4"
           ],
-          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 555,
+          "duration": 4885,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -134,7 +234,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "b1553e7e-0976-44e8-8a30-065afc010bc8",
+      "uuid": "994c9607-9e06-461f-b4f0-4e3ea69a3575",
       "title": "",
       "fullFile": "cypress/integration/Column6/requests.spec.js",
       "file": "cypress/integration/Column6/requests.spec.js",
@@ -143,7 +243,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "c9bdcc4a-5795-4176-b6cf-8013bebc260a",
+          "uuid": "17dfe364-6d3e-4d9b-a4f3-d9c176d39d8e",
           "title": "Requests testing",
           "fullFile": "",
           "file": "",
@@ -154,7 +254,7 @@
               "title": "Get request",
               "fullTitle": "Requests testing Get request",
               "timedOut": null,
-              "duration": 1450,
+              "duration": 1511,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -163,8 +263,8 @@
               "context": null,
               "code": "cy.request('https://jsonplaceholder.cypress.io/comments').then(function (response) {\n  expect(response.status).to.eq(200);\n  expect(response.body).to.have.length(500);\n  expect(response).to.have.property('headers');\n  expect(response).to.have.property('duration');\n});",
               "err": {},
-              "uuid": "87e704b8-9b3c-4b23-9b47-ddf7df48a4bb",
-              "parentUUID": "c9bdcc4a-5795-4176-b6cf-8013bebc260a",
+              "uuid": "c2593116-3046-4bea-919b-4375f37e4979",
+              "parentUUID": "17dfe364-6d3e-4d9b-a4f3-d9c176d39d8e",
               "isHook": false,
               "skipped": false
             },
@@ -172,7 +272,7 @@
               "title": "Delete request",
               "fullTitle": "Requests testing Delete request",
               "timedOut": null,
-              "duration": 1546,
+              "duration": 1646,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -181,8 +281,8 @@
               "context": null,
               "code": "cy.request('DELETE', 'https://reqres.in/api/users/2').then(function (response) {\n  expect(response.status).to.eq(204);\n});",
               "err": {},
-              "uuid": "4a50a9f6-391f-4a09-8993-7a566d392c26",
-              "parentUUID": "c9bdcc4a-5795-4176-b6cf-8013bebc260a",
+              "uuid": "98576c77-47df-43be-ad51-15739a375fdd",
+              "parentUUID": "17dfe364-6d3e-4d9b-a4f3-d9c176d39d8e",
               "isHook": false,
               "skipped": false
             },
@@ -190,7 +290,7 @@
               "title": "Post request",
               "fullTitle": "Requests testing Post request",
               "timedOut": null,
-              "duration": 468,
+              "duration": 496,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -199,22 +299,22 @@
               "context": null,
               "code": "cy.request({\n  method: 'POST',\n  url: 'https://reqres.in/api/users',\n  form: true,\n  // indicates the body should be form urlencoded and sets Content-Type: application/x-www-form-urlencoded headers\n  body: {\n    \"name\": \"morpheus\",\n    \"job\": \"leader\"\n  }\n}).then(function (response) {\n  expect(response.status).to.eq(201);\n});",
               "err": {},
-              "uuid": "58bc4dfc-78d1-4a51-8cc3-078950bd1ffc",
-              "parentUUID": "c9bdcc4a-5795-4176-b6cf-8013bebc260a",
+              "uuid": "3f0e4f64-3c6f-4dd4-bcdd-5b40209eb30b",
+              "parentUUID": "17dfe364-6d3e-4d9b-a4f3-d9c176d39d8e",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "87e704b8-9b3c-4b23-9b47-ddf7df48a4bb",
-            "4a50a9f6-391f-4a09-8993-7a566d392c26",
-            "58bc4dfc-78d1-4a51-8cc3-078950bd1ffc"
+            "c2593116-3046-4bea-919b-4375f37e4979",
+            "98576c77-47df-43be-ad51-15739a375fdd",
+            "3f0e4f64-3c6f-4dd4-bcdd-5b40209eb30b"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 3464,
+          "duration": 3653,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
