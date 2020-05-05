@@ -47,6 +47,12 @@ before(() => {
                 cy.get(".form-group-adTag > .CodeMirror > .CodeMirror-scroll").type(data.mediaTag);
                 cy.get("#media-save-btn").click();
             })
+
+            Cypress.Commands.add('verifyElementsExist', (...elements) => {
+                for (var i=0; i<elements.length; i++) 
+                cy.get(elements[i]).should("exist")
+            })
+
         })
     })
 })
